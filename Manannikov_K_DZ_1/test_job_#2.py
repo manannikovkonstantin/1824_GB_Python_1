@@ -1,5 +1,5 @@
 i = 0
-while i <= 999:
+while i <= 9:
     num = i % 2
     if num != 0:
         degree = [int(a) for a in str(i ** 3)]
@@ -10,5 +10,3 @@ while i <= 999:
         if del_7 == 0:
             print(i)
     i += 1
-
-
