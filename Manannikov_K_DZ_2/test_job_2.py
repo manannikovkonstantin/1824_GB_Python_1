@@ -5,7 +5,7 @@ for i in data:
         item_1 = ''
         plus = ''
         if int(i) >= 17:
-            i = '"' + i + '"'
+            i = f'"{i}"'
         for c in i:  # перебрали значения и вытащили цифры
             if c.isdigit():
                 item_1 = item_1 + c
@@ -13,6 +13,6 @@ for i in data:
                 plus = c
         num = int(item_1)
         if num < 10:  # добавили к значениям 0
-            i = '"' + plus + '0' + item_1 + '"'
+            i = f'"{plus}0{item_1}"'
     data_final += i + ' '
 print(data_final)
