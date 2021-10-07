@@ -30,7 +30,7 @@ print(id(prices))
 
 print('доп. задание С Создать новый список, содержащий те же цены, но отсортированные по убыванию. ---->')
 
-prices_2 = prices
+prices_2 = prices[:]
 prices_2.sort(reverse=True)
 for i in prices_2:
     str_num = str(i).split(".")
@@ -40,7 +40,9 @@ for i in prices_2:
 
 print('доп. задание D Вывести цены пяти самых дорогих товаров. Сможете ли вывести цены этих товаров по возрастанию, написав минимум кода? ---->')
 
-for i in prices_2[:5]:
+prices_3 = prices[:]
+prices_3.sort(reverse=True)
+for i in prices_3[:5]:
     str_num = str(i).split(".")
     r = str_num[0]
     kk = f'{str_num[-1]:0<2}' if len(str_num) > 1 else '00'
