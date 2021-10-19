@@ -12,5 +12,9 @@ weather_data = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
 
 zaq = [i for i in weather_data]  # генератор
 
+zaqzaq = []
 for i in range(1, len(zaq)):  # цик перебора и сравнения
-    print(zaq[i - 1])
+    if zaq[i] > zaq[i - 1]:
+        zaqzaq.append(zaq[i])
+
+print(zaqzaq)
