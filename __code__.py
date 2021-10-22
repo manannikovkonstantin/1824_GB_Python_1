@@ -1,4 +1,7 @@
-numbers = [23.23, 0.1233, 1.0, 4.223, 9887.2]
-
-for x in numbers:
-    ptr = "{:1.2f}".format(x)
+file_1 = open('nginx_logs.txt', 'r', encoding='utf-8')
+for line in file_1:
+    print(line)
+file_1.close()
+# Привет всем, добравшимся до 6-го урока.
+#
+# Работаем с файлами.
